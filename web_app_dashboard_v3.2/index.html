@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>WebApp Dashboard</title>
   </head>
   <body>
@@ -242,11 +243,10 @@
         <h3>Settings</h3>
 
         <form action="">
+          <!-- custom CSS toggle code -->
           <div>
-            <!-- custom CSS toggle code -->
-            <input type="checkbox" name="" id="" />
-
-            <input type="checkbox" name="" id="" />
+            <input class="toggle-switch type="checkbox" name="" id="" /> <input
+            class="toggle-switch type="checkbox" name="" id="" />
           </div>
 
           <select name="" id="">
@@ -257,8 +257,10 @@
             <option value="">Eastern</option>
           </select>
 
-          <button type="submit">Save</button>
-          <button type="reset">Cancel</button>
+          <div>
+            <button type="submit">Save</button>
+            <button type="reset">Cancel</button>
+          </div>
         </form>
       </section>
     </main>
