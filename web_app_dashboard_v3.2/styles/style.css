@@ -1,4 +1,26 @@
-/* Toggle switch  */
+/* Grid Layout */
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "man";
+}
+
+/* Toggle switch code  */
 .toggle-switch {
   -webkit-appearance: none;
   position: relative;
