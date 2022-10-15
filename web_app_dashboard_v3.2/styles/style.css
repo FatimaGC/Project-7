@@ -1,5 +1,12 @@
-/* Grid Layout */
+.notification-icon,
+.nav-icon,
+.social-icon {
+  width: 5%;
+}
+
+/* Layout */
 header {
+  display: flex;
   grid-area: header;
 }
 
@@ -11,13 +18,15 @@ main {
   grid-area: main;
 }
 .grid-container {
+  max-width: 800px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
     "header"
     "nav"
-    "man";
+    "main";
 }
 
 /* Toggle switch code  */
