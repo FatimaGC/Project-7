@@ -37,18 +37,19 @@
   font-size: 2em;
 }
 
-.nav-icon,
+.navigation-icon,
 .social-icon {
   width: 5%;
 }
 
 /* Layout */
 
-nav {
+.navigation {
   grid-area: nav;
 }
 
-main {
+.main-content {
+  display: grid;
   grid-area: main;
 }
 .grid-container {
@@ -96,4 +97,35 @@ main {
 
 .toggle-switch:checked::after {
   left: 70%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main";
+  }
+
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .traffic,
+  .social-stats {
+    grid-column: 1 / span 2;
+  }
+
+  .daily-traffic,
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile-users,
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
 }
