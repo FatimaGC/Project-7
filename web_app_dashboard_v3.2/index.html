@@ -12,12 +12,13 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"
       integrity="sha512-d6nObkPJgV791iTGuBoVC9Aa2iecqzJRE0Jiqvk85BhLHAPhWqkuBiQb1xz2jvuHNqHLYoN3ymPfpiB1o+Zgpw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>WebApp Dashboard</title>
   </head>
 
@@ -83,7 +84,7 @@
         </ul>
 
         <div>
-          <canvas id="traffic-chart">/</canvas>
+          <canvas id="traffic-chart" width="200" height="200">/</canvas>
         </div>
       </section>
 
@@ -281,5 +282,6 @@
         </form>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
