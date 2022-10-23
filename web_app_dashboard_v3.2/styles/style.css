@@ -28,10 +28,6 @@
   width: 20px;
 }
 
-/* .header-notification-icon-container svg {
-  max-width: 100%;
-} */
-
 .header-vertical-line {
   border-left: 1px solid lightgray;
   height: 50px;
@@ -54,11 +50,6 @@
   margin: 0 5px;
 }
 
-/* .navigation-icon,
-.social-icon {
-  max-width: 100%;
-} */
-
 /* NAVIGATION STYLES */
 .navigation {
   background-color: #4d4475;
@@ -78,6 +69,24 @@
   width: 12%;
 }
 
+/* HEADLINE STYLES */
+
+.headline-container {
+  display: flex;
+}
+.headline {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headline-tab {
+  background-color: #efefef;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  height: 50px;
+  width: 70%;
+}
 /* Layout */
 
 .main-content {
