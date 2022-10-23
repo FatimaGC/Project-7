@@ -73,6 +73,7 @@
 
 .headline-container {
   display: flex;
+  margin-bottom: 10px;
 }
 .headline {
   font-size: 20px;
@@ -86,6 +87,15 @@
   border-left: 1px solid lightgray;
   height: 50px;
   width: 70%;
+}
+
+/* ALERT STYLES */
+.alert {
+  background-color: #796ef4;
+  border-radius: 7px;
+  margin: 0 auto;
+  height: 40px;
+  width: 90%;
 }
 /* Layout */
 
