@@ -73,6 +73,10 @@ h3 {
   width: 12%;
 }
 
+/* .main-content {
+  padding: 0 10px;
+} */
+
 /* HEADLINE STYLES */
 
 .headline-container {
@@ -100,6 +104,20 @@ h3 {
   margin: 0 auto;
   height: 40px;
   width: 90%;
+}
+
+/* GENERAL WIDGET STYLES */
+.widget {
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+/* TRAFFIC WIDGET STYLES */
+
+.traffic-timeframe {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
 }
 /* Layout */
 
