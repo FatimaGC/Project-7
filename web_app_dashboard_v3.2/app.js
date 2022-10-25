@@ -59,3 +59,28 @@ const dailyTrafficChart = new Chart(
   document.getElementById("daily-traffic-chart"),
   dailyTrafficConfig
 );
+
+// MOBILE USERS CHART
+const mobileUsersLabels = ["Desktop", "Tablet", "Phones"];
+
+const mobileUsersData = {
+  labels: mobileUsersLabels,
+  datasets: [
+    {
+      labels: mobileUsersLabels,
+      data: [60, 20, 20],
+      backgroundColor: ["#7477bf", "#81c98f", "#51b6c8"],
+      hoverOffset: 4,
+    },
+  ],
+};
+
+const mobileUsersConfig = {
+  type: "doughnut",
+  data: mobileUsersData,
+};
+
+const mobileUsersChart = new Chart(
+  document.getElementById("mobile-users-chart"),
+  mobileUsersConfig
+);
