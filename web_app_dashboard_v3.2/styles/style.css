@@ -119,7 +119,35 @@ h3 {
   list-style: none;
   padding: 0;
 }
-/* Layout */
+
+/* SOCIAL WIDGET STYLES */
+/* 
+.social-stats {
+  display: flex;
+}
+
+.social-container {
+  display: flex;
+} */
+
+.social-icon {
+  background-color: #7477bf;
+  border-radius: 50%;
+  display: inline-block;
+  height: 70px;
+  transform-origin: 50% 50%;
+  width: 70px;
+}
+
+.social-icon svg {
+  fill: #fff;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  width: 55%;
+}
+
+/* LAYOUT */
 
 .main-content {
   display: grid;
