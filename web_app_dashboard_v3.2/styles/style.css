@@ -184,19 +184,34 @@ h3 {
 }
 
 /* NEW MEMBER STYLES */
-.members {
-  margin: 0 auto;
+
+.members :last-child {
+  border-bottom: none;
+}
+
+.members-title {
+  margin-left: 5px;
+}
+.member-container {
+  border-bottom: 1px solid lightgray;
+  font-weight: 100;
+  line-height: 0.25;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-/* .member-container {
-} */
+.member-container :last-child {
+  margin-bottom: 30px;
+}
+
+.member-container a {
+  color: #7477bf;
+  text-decoration: none;
+}
 
 .member-headshot {
   border-radius: 50%;
-  /* display: inline-block; */
   height: 100px;
-  margin: 0 auto;
   width: 100px;
 }
 
