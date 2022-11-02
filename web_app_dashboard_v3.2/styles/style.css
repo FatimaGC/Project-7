@@ -183,9 +183,13 @@ h3 {
   margin: 0;
 }
 
-/* NEW MEMBER STYLES */
+/* NEW MEMBER AND RECENT ACTIVITY STYLES */
 
 .members :last-child {
+  border-bottom: none;
+}
+
+.activity :last-child {
   border-bottom: none;
 }
 
@@ -223,6 +227,40 @@ h3 {
 .activity-text p {
   margin-bottom: 0;
   margin-top: 5px;
+}
+
+/* MESSAGE USER STYLES */
+
+.message-form {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message-form-input {
+  box-sizing: border-box;
+  height: 50px;
+  width: 310px;
+}
+.message-form-input,
+.message-form-textbox {
+  background-color: #f5f5f5;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  color: #bebebe;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.message-send-button {
+  color: #fff;
+  background-color: #7477bf;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+  height: 50px;
+  letter-spacing: 1.5px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  width: 310px;
 }
 
 /* TOGGLE SWITCH CODE  */
