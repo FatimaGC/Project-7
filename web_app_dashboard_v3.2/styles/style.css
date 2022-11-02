@@ -215,6 +215,16 @@ h3 {
   width: 100px;
 }
 
+.activity-text {
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.activity-text p {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
 /* TOGGLE SWITCH CODE  */
 .toggle-switch {
   -webkit-appearance: none;
