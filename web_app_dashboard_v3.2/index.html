@@ -300,14 +300,19 @@
       <section class="settings widget">
         <h3>Settings</h3>
 
-        <form action="">
+        <form class="settings-form" action="">
           <!-- custom CSS toggle code -->
-          <div>
-            <input class="toggle-switch" type="checkbox" name="" id="" />
+          <div class="toggle-switch-container">
+            <label for="">Send Email Notifications</label>
             <input class="toggle-switch" type="checkbox" name="" id="" />
           </div>
 
-          <select name="" id="">
+          <div class="toggle-switch-container">
+            <label for="">Set Profile to Public</label>
+            <input class="toggle-switch" type="checkbox" name="" id="" />
+          </div>
+
+          <select class="settings-timezone" name="" id="">
             <option value="" disabled selected>Select a Timezone</option>
             <option value="">Western</option>
             <option value="">Mountain</option>
@@ -315,9 +320,9 @@
             <option value="">Eastern</option>
           </select>
 
-          <div>
-            <button type="submit">Save</button>
-            <button type="reset">Cancel</button>
+          <div class="settings-btn-container">
+            <button class="settings-btn submit-btn" type="submit">Save</button>
+            <button class="settings-btn reset-btn" type="reset">Cancel</button>
           </div>
         </form>
       </section>
