@@ -21,7 +21,8 @@ const trafficData = {
     {
       data: [550, 1400, 1000, 2000, 1500, 1700, 1200, 1800, 2300, 1500, 2500],
       fill: true,
-      borderColor: "rgb(75, 192, 192)",
+      backgroundColor: "rgba(116, 119, 191, 0.25)",
+      tension: 0.4,
     },
   ],
 };
@@ -29,6 +30,13 @@ const trafficData = {
 const trafficConfig = {
   type: "line",
   data: trafficData,
+  options: {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
 };
 
 const trafficChart = new Chart(
