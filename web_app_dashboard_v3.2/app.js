@@ -60,7 +60,7 @@ const dailyTrafficChart = new Chart(
   dailyTrafficConfig
 );
 
-// MOBILE USERS CHART
+// MOBILE USERS PIE CHART
 const mobileUsersLabels = ["Desktop", "Tablet", "Phones"];
 
 const mobileUsersData = {
@@ -68,7 +68,7 @@ const mobileUsersData = {
   datasets: [
     {
       labels: mobileUsersLabels,
-      data: [60, 20, 20],
+      data: [70, 15, 15],
       backgroundColor: ["#7477bf", "#81c98f", "#51b6c8"],
       hoverOffset: 4,
     },
@@ -78,6 +78,14 @@ const mobileUsersData = {
 const mobileUsersConfig = {
   type: "doughnut",
   data: mobileUsersData,
+  options: {
+    plugins: {
+      legend: {
+        display: true,
+        position: "right",
+      },
+    },
+  },
 };
 
 const mobileUsersChart = new Chart(
