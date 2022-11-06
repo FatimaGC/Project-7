@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -7,11 +8,6 @@ h3 {
 }
 
 /* LAYOUT */
-
-.main-content {
-  display: grid;
-  grid-area: main;
-}
 
 .grid-container {
   display: grid;
@@ -23,6 +19,11 @@ h3 {
     "main";
 }
 
+.main-content {
+  display: grid;
+  grid-area: main;
+}
+
 /* HEADER STYLES */
 .header {
   align-items: center;
@@ -32,7 +33,6 @@ h3 {
   grid-area: header;
   height: 60px;
   justify-content: space-around;
-  outline: 1px solid blue;
   padding: 5px;
 }
 
@@ -107,7 +107,7 @@ h3 {
   border-bottom: 1px solid lightgray;
   border-left: 1px solid lightgray;
   height: 50px;
-  width: 70%;
+  width: 200px;
 }
 
 /* ALERT NOTIFICATION STYLES */
@@ -116,7 +116,7 @@ h3 {
   border-radius: 7px;
   margin: 0 auto;
   height: 40px;
-  width: 90%;
+  width: 85%;
 }
 
 /* GENERAL WIDGET STYLES */
@@ -241,7 +241,7 @@ h3 {
   color: #bebebe;
   margin-bottom: 20px;
   padding: 10px;
-  width: 320px;
+  width: 100%;
 }
 
 .message-send-button {
@@ -253,7 +253,7 @@ h3 {
   letter-spacing: 1.5px;
   padding: 0 20px;
   text-transform: uppercase;
-  width: 350px;
+  width: 100%;
 }
 
 /* SETTINGS STYLES */
@@ -314,7 +314,7 @@ h3 {
   border-radius: 7px;
   height: 50px;
   margin: 20px auto;
-  width: 350px;
+  width: 100%;
 }
 
 .settings-btn-container {
@@ -341,7 +341,7 @@ h3 {
 
 /* MEDIA QUERIES */
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .grid-container {
     grid-template-columns: 55px 1fr;
     grid-template-areas:
@@ -369,4 +369,4 @@ h3 {
   .settings {
     grid-column: 2 / span 1;
   }
-} */
+}
