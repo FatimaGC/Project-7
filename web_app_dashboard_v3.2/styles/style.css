@@ -350,6 +350,8 @@ h3 {
   }
 
   .main-content {
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -368,5 +370,9 @@ h3 {
   .activity,
   .settings {
     grid-column: 2 / span 1;
+  }
+
+  .headline-tab {
+    width: 100%;
   }
 }
