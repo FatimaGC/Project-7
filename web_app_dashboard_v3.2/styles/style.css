@@ -14,8 +14,6 @@ h3 {
 }
 
 .grid-container {
-  /* max-width: 70%;
-  margin: 0 auto; */
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -23,7 +21,6 @@ h3 {
     "header"
     "nav"
     "main";
-  outline: 1px solid blue;
 }
 
 /* HEADER STYLES */
