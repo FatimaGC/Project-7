@@ -45,6 +45,7 @@ const dailyTrafficData = {
     {
       data: [55, 120, 155, 130, 230, 200, 100],
       fill: true,
+      backgroundColor: "#7477bf",
       borderColor: "rgb(75, 192, 192)",
     },
   ],
@@ -53,6 +54,13 @@ const dailyTrafficData = {
 const dailyTrafficConfig = {
   type: "bar",
   data: dailyTrafficData,
+  options: {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
 };
 
 const dailyTrafficChart = new Chart(
