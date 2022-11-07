@@ -116,7 +116,7 @@ h3 {
   border-radius: 7px;
   margin: 0 auto;
   height: 40px;
-  width: 85%;
+  width: 97%;
 }
 
 /* GENERAL WIDGET STYLES */
@@ -386,13 +386,31 @@ h3 {
     width: 50%;
   }
 
+  .traffic {
+    display: grid;
+    grid-template-areas:
+      "title timeframe"
+      "chart";
+  }
+
+  .traffic-title {
+    font-size: 16px;
+    grid-area: title;
+  }
+
   .traffic-timeframe {
     display: flex;
+    grid-area: timeframe;
     justify-content: flex-end;
     margin-right: 10px;
   }
 
   .traffic-timeframe li {
     margin-left: 15px;
+  }
+
+  .traffic-chart-container {
+    grid-area: chart;
+    margin-top: 70px;
   }
 }
