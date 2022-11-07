@@ -385,4 +385,14 @@ h3 {
   .navigation-link {
     width: 50%;
   }
+
+  .traffic-timeframe {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  .traffic-timeframe li {
+    margin-left: 15px;
+  }
 }
