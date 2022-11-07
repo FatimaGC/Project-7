@@ -375,4 +375,14 @@ h3 {
   .headline-tab {
     width: 100%;
   }
+
+  .navigation {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .navigation-link {
+    width: 50%;
+  }
 }
