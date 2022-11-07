@@ -348,11 +348,16 @@ h3 {
       "header header"
       "nav main";
   }
-
+  /* 
   .main-content {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
+    /* display: flex;
+    flex-direction: column; */
+  /* grid-template-columns: 1fr 1fr;
+  } */
+
+  .headline-container,
+  .alert {
+    grid-column: 1 / span 2;
   }
 
   .traffic,
@@ -360,17 +365,26 @@ h3 {
     grid-column: 1 / span 2;
   }
 
-  .daily-traffic,
-  .members,
-  .message {
+  .daily-traffic {
     grid-column: 1 / span 1;
   }
 
-  .mobile-users,
+  .mobile-users {
+    grid-column: 2 / span 1;
+  }
+
+  .members,
+  .activity,
+  .message,
+  .settings {
+    grid-column: 1 span 2;
+  }
+
+  /* .mobile-users,
   .activity,
   .settings {
     grid-column: 2 / span 1;
-  }
+  } */
 
   .headline-tab {
     width: 100%;
