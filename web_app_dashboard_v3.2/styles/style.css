@@ -348,12 +348,10 @@ h3 {
       "header header"
       "nav main";
   }
-  /* 
+
   .main-content {
-    /* display: flex;
-    flex-direction: column; */
-  /* grid-template-columns: 1fr 1fr;
-  } */
+    grid-template-columns: 1fr 1fr;
+  }
 
   .headline-container,
   .alert {
@@ -370,7 +368,8 @@ h3 {
   }
 
   .mobile-users {
-    grid-column: 2 / span 1;
+    /* grid-column: 2 / span 1; */
+    border-left: 1px solid lightgray;
   }
 
   .members,
@@ -426,5 +425,18 @@ h3 {
   .traffic-chart-container {
     grid-area: chart;
     margin-top: 70px;
+  }
+
+  .social-stats {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+  }
+
+  .social-stats h3 {
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 }
