@@ -304,6 +304,15 @@ h3 {
   background-color: #7477bf;
 }
 
+.toggle-switch:checked::before {
+  color: white;
+  content: "ON";
+  font-size: 12px;
+  left: 10px;
+  position: relative;
+  top: 3px;
+}
+
 .toggle-switch:checked::after {
   left: 80%;
 }
