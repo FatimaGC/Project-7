@@ -95,6 +95,9 @@ const mobileUsersConfig = {
   type: "doughnut",
   data: mobileUsersData,
   options: {
+    layout: {
+      padding: 20,
+    },
     plugins: {
       legend: {
         display: true,

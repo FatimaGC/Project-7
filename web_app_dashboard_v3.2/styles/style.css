@@ -377,8 +377,8 @@ h3 {
   }
 
   .mobile-users {
-    /* grid-column: 2 / span 1; */
     border-left: 1px solid lightgray;
+    display: grid;
   }
 
   .members,
@@ -387,12 +387,6 @@ h3 {
   .settings {
     grid-column: 1 / span 2;
   }
-
-  /* .mobile-users,
-  .activity,
-  .settings {
-    grid-column: 2 / span 1;
-  } */
 
   .headline-tab {
     width: 100%;
@@ -434,6 +428,10 @@ h3 {
   .traffic-chart-container {
     grid-area: chart;
     margin-top: 70px;
+  }
+
+  .daily-traffic {
+    display: grid;
   }
 
   .social-stats {
@@ -482,5 +480,38 @@ h3 {
 
   .second-toggle-switch {
     margin-left: 55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+
+  .activity,
+  .settings {
+    border-left: 1px solid lightgray;
+    grid-column: 2 / span 1;
+  }
+
+  .members-title,
+  .activity-title,
+  .message-title,
+  .settings-title {
+    font-size: 14px;
+  }
+
+  .activity-text {
+    grid-column: 2 / span 2;
+  }
+
+  .toggle-switch-container {
+    margin-bottom: 45px;
+    margin-top: 10px;
+  }
+
+  .settings-timezone {
+    margin-top: 50px;
   }
 }
