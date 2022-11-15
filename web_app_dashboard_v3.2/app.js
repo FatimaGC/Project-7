@@ -6,6 +6,13 @@ alertBanner.innerHTML = `<div class="alert-banner">
   <span class="alert-banner-close">x</span>
 </div>`;
 
+alertBanner.addEventListener("click", (event) => {
+  const element = event.target;
+  if (element.classList.contains("alert-banner-close")) {
+    alertBanner.style.display = "none";
+  }
+});
+
 // Traffic Chart
 // const traffic = document.getElementById("traffic-chart");
 
