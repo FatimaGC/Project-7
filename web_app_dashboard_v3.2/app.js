@@ -14,7 +14,6 @@ alertBanner.addEventListener("click", (event) => {
 });
 
 // Traffic Chart
-// const traffic = document.getElementById("traffic-chart");
 
 const trafficLabels = [
   "16-22",
@@ -34,7 +33,7 @@ const trafficData = {
   labels: trafficLabels,
   datasets: [
     {
-      data: [550, 1400, 1000, 2000, 1500, 1700, 1200, 1800, 2300, 1500, 2500],
+      data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
       fill: true,
       backgroundColor: "rgba(116, 119, 191, 0.25)",
       tension: 0.4,
@@ -46,6 +45,15 @@ const trafficConfig = {
   type: "line",
   data: trafficData,
   options: {
+    aspectRatio: 2.5,
+    animation: {
+      duration: 0,
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
     plugins: {
       legend: {
         display: false,
