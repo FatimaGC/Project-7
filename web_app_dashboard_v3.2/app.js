@@ -74,10 +74,11 @@ const dailyTrafficData = {
   labels: dailyTrafficLabels,
   datasets: [
     {
-      data: [55, 120, 155, 130, 230, 200, 100],
+      data: [75, 115, 175, 125, 225, 200, 100],
       fill: true,
       backgroundColor: "#7477bf",
       borderColor: "rgb(75, 192, 192)",
+      // borderWidth: 1,
     },
   ],
 };
@@ -86,6 +87,11 @@ const dailyTrafficConfig = {
   type: "bar",
   data: dailyTrafficData,
   options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
     plugins: {
       legend: {
         display: false,
