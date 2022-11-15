@@ -111,11 +111,19 @@ h3 {
 }
 
 /* ALERT NOTIFICATION STYLES */
-.alert {
+
+.alert-banner {
+  align-items: center;
   background-color: #7477bf;
   border-radius: 7px;
+  display: flex;
+
+  color: #fff;
+
+  /* height: 40px; */
+  justify-content: space-between;
   margin: 0 auto;
-  height: 40px;
+  padding: 1px 10px;
   width: 97%;
 }
 

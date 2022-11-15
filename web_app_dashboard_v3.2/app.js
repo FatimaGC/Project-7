@@ -1,3 +1,11 @@
+//ALERT CODE
+const alertBanner = document.getElementById("alert");
+
+alertBanner.innerHTML = `<div class="alert-banner">
+  <p><strong>Alert:</strong> You have unread messages</p>
+  <span class="alert-banner-close">x</span>
+</div>`;
+
 // Traffic Chart
 // const traffic = document.getElementById("traffic-chart");
 
