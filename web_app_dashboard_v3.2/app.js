@@ -113,7 +113,7 @@ const mobileUsersData = {
   datasets: [
     {
       labels: mobileUsersLabels,
-      data: [70, 15, 15],
+      data: [2000, 550, 550],
       backgroundColor: ["#7477bf", "#81c98f", "#51b6c8"],
       hoverOffset: 4,
     },
@@ -124,13 +124,14 @@ const mobileUsersConfig = {
   type: "doughnut",
   data: mobileUsersData,
   options: {
-    layout: {
-      padding: 20,
-    },
+    aspectRatio: 1.9,
     plugins: {
       legend: {
-        display: true,
         position: "right",
+        labels: {
+          boxWidth: 20,
+          fontStyle: "bold",
+        },
       },
     },
   },
