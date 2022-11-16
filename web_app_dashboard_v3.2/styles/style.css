@@ -46,7 +46,13 @@ h3 {
   fill: #fff;
   flex-shrink: 0;
   height: 20px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
   width: 20px;
+}
+
+.header-notification-icon-container:hover {
+  transform: rotate(30deg);
 }
 
 .header-vertical-line {
