@@ -137,11 +137,31 @@ h3 {
 
 /* TRAFFIC WIDGET STYLES */
 
+.traffic-title {
+  height: 50px;
+  padding-top: 5px;
+}
+
 .traffic-timeframe {
+  /* align-items: center; */
   display: flex;
+  height: 50px;
   justify-content: space-around;
   list-style: none;
   padding: 0;
+}
+
+.traffic-timeframe :first-child {
+  background-color: #81c98f;
+  border-radius: 20px;
+  color: #fff;
+  height: 35px;
+  text-align: center;
+  width: 70px;
+}
+
+.traffic-timeframe li {
+  padding: 5px 5px;
 }
 
 /* SOCIAL WIDGET STYLES */
