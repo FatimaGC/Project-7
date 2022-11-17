@@ -55,6 +55,18 @@ h3 {
   transform: rotate(30deg);
 }
 
+.header-notification-icon-container::after {
+  background-color: #90f08d;
+  border-radius: 50%;
+  bottom: 30px;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 15px;
+  position: relative;
+  width: 5px;
+}
+
 .header-vertical-line {
   border-left: 1px solid lightgray;
   height: 50px;

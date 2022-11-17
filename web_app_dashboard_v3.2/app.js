@@ -1,4 +1,4 @@
-//ALERT CODE
+//ALERT BANNER CODE
 const alertBanner = document.getElementById("alert");
 
 alertBanner.innerHTML = `<div class="alert-banner">
